@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 0e582e63284403144a671e074cfc961d
+  productGUID: fa52e147ded1fe34eb750ddf65713f8b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -910,7 +910,7 @@ PlayerSettings:
   cloudProjectId: 55673745-b289-4f4d-b86c-4070bb6d1188
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Adventure
+  projectName: 
   organizationId: nur6
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
