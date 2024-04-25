@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="HealthBarBackground" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/2DBeginnerTutorialResources/Art/Sprites/UI/UIHealthFrame.png?fileID=21300000&amp;guid=94d1f28a5aa0ed94b8d3bd15086f4b63&amp;type=3#UIHealthFrame&quot;); width: 509px; height: 264px; -unity-background-scale-mode: scale-to-fit; position: relative; top: 12px; left: 32px;">
+        <ui:VisualElement name="HealthBarContainer" style="flex-grow: 1; width: 271px; height: 76px; position: absolute; top: 87px; left: 214px;">
+            <ui:VisualElement name="HealthBar" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/2DBeginnerTutorialResources/Art/Sprites/UI/UIHealthBar.png?fileID=21300000&amp;guid=06131b9172a2c144fbb98dd9cb53e741&amp;type=3#UIHealthBar&quot;); width: 100%; height: 100%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CharacterPortrait" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/2DBeginnerTutorialResources/Art/Sprites/UI/CharacterPortrait.png?fileID=21300000&amp;guid=e15de6f8d935253448ee4e7709bd216c&amp;type=3#CharacterPortrait&quot;); -unity-background-scale-mode: scale-to-fit; width: 185px; height: 100%; position: absolute; top: -19px; left: 31px;" />
+    </ui:VisualElement>
+</ui:UXML>
