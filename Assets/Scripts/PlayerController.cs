@@ -28,8 +28,10 @@ public class PlayerController : MonoBehaviour
 
     private Animator animator;
     private Vector2 moveDirection = new Vector2(1, 0);
+
+    public GameObject projectilePrefab;
+    public InputAction launchAction;
     
-        
         // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+        
 
 
     }
@@ -55,11 +58,13 @@ public class PlayerController : MonoBehaviour
         {
             moveDirection.Set(move.x, move.y);
             moveDirection.Normalize();
+            
         }
         
         animator.SetFloat("Look X", moveDirection.x);
         animator.SetFloat("Look Y", moveDirection.y);
         animator.SetFloat("Speed", move.magnitude);
+        
         
         
         if (isInvincible)
@@ -69,6 +74,11 @@ public class PlayerController : MonoBehaviour
             {
                 isInvincible = false;
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
         }
        
     }
@@ -93,15 +103,25 @@ public class PlayerController : MonoBehaviour
 
             isInvincible = true;
             damageCooldown = timeInvincible;
+            animator.SetTrigger("Hit");
         }
         
-        animator.SetTrigger("Hit");
+        
         
         
         
         
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHandler.instance.SetHealthValue(currentHealth / (float) maxHealth);
+    }
+
+    void Launch()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(moveDirection, 300);
+        
+        animator.SetTrigger("Launch");
     }
     
    

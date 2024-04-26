@@ -7113,8 +7113,39 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: b77822e0485373d40b5beb92e9a5e728, type: 2}
     - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
         type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 3353596782817145349, guid: 22b5008811105c945ba7bb74f58a2864,
+        type: 3}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_Name
+      value: Launch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
       propertyPath: MoveAction.m_SingletonActionBindings.Array.size
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
         type: 3}
@@ -7128,13 +7159,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
         type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: d573bdc3-6336-4cf1-b598-fbd4f35851fe
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
       propertyPath: MoveAction.m_SingletonActionBindings.Array.data[5].m_Action
       value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/c
+      objectReference: {fileID: 0}
+    - target: {fileID: 4294065610583954252, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: launchAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Launch
       objectReference: {fileID: 0}
     - target: {fileID: 6397333306649192191, guid: 06eab5b312b51ba46baf62ff550a04f7,
         type: 3}
       propertyPath: m_Name
       value: RubyIdleDown1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397333306649192191, guid: 06eab5b312b51ba46baf62ff550a04f7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8635232734387865533, guid: 06eab5b312b51ba46baf62ff550a04f7,
         type: 3}

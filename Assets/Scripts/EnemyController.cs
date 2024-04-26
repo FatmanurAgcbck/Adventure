@@ -17,6 +17,8 @@ public class EnemyController : MonoBehaviour
 
     private Animator animator;
 
+    private bool aggressive = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,12 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {    
         Vector2 position = rigidbody2d.position;
+
+        // düşmanın bozuk olup olmadığını kontrol 
+        if (!aggressive)
+        {
+            return;
+        }
      
         if (vertical)
         {
@@ -70,5 +78,12 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+    }
+
+    public void Fix()
+    {
+        aggressive = false;
+        GetComponent<Rigidbody2D>().simulated = false;
+        animator.SetTrigger("Fixed");
     }
 }
